@@ -58,3 +58,4 @@ See the README in the client directory for more information on the React app.
 
 - [ ] Command line generators for the React App
 - [ ] Turn this into a proper gem with a Rails template
+- [ ] Hook the custom generators into model generation
