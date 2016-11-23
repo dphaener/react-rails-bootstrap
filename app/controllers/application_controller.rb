@@ -3,13 +3,8 @@ class ApplicationController < ActionController::API
 
   before_action :authenticate_request
 
-  def pundit_user
-    UserContext.new(@user)
-  end
-
   def request_context
     {
-      user: UserContext.new(@user),
       request: request
     }
   end
