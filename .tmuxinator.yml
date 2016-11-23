@@ -1,0 +1,11 @@
+name: event-tamer
+root: ~/code/event-tamer
+windows:
+  - editor: vim
+  - terminal: #empty
+  - server:
+      layout: even-horizontal
+      panes:
+        - rails s
+        - cd client && yarn start
+  - logs: tail -f log/development.log

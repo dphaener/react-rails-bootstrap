@@ -1,0 +1,45 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - "lib/generators/templates/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 59
+
+Style/StringLiterals:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Style/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Style/AccessorMethodName:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'db/schema.rb'
+
+Style/ExtraSpacing:
+  Exclude:
+    - 'db/schema.rb'
+
+Style/IndentHash:
+  EnforcedStyle: consistent
+
+Style/NumericLiterals:
+  MinDigits: 15

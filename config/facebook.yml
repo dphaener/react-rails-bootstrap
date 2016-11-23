@@ -1,0 +1,6 @@
+development:
+  app_id: 102243040264047
+  secret_key: f903f63d9f473039b3a57f4c96ff79c6
+test:
+  app_id: 102243040264047
+  secret_key: f903f63d9f473039b3a57f4c96ff79c6
