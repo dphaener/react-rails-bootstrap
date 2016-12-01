@@ -3,22 +3,16 @@
 // Vendor
 import React from 'react';
 
-// Local
-import Navigation from './components/shared/navigation';
-
 // Types
 export type AppInput = {
-  children: Object | Array<Object>,
-  router: Object
+  children: Object | Array<Object>
 };
 
 // Main Component
 export const App = ({
-  children,
-  router
+  children
 }: AppInput): React$Element<any> =>
-  <div style={{ marginTop: '50px', padding: '20px' }}>
-    <Navigation router={router} />
+  <div>
     {children}
   </div>;
 
